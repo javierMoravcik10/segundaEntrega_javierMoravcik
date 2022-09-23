@@ -1,0 +1,25 @@
+$mapsRedes:(bi-facebook:blue, bi-instagram: red, bi-whatsapp: green);
+$estilos:(
+    color: rgba(49, 49, 49, 0.747),
+    tFuente: 40px,
+    bordeMantenimiento: 10px,
+    colorTexto: rgb(231, 134, 6)
+    );
+
+/* MAPA Y MAPGET (+ @each) REALIZADO EN LA SECCION HTML SKATEBOARDING - IMPLEMENTADO EN ICONOS DE LAS REDES EN EL FOOTER*/
+
+    .textoMantenimiento {
+
+    h4 {
+        background-color:map-get($estilos, color);
+        font-size:map-get($estilos, tFuente);
+        border-radius:map-get($estilos, bordeMantenimiento);
+        color: map-get($estilos, colorTexto);
+    }
+}
+
+@each $red, $color in $mapsRedes {
+    .#{$red} {
+        color: $color;
+    }
+}   

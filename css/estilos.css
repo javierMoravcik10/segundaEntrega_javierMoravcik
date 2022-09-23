@@ -1,0 +1,276 @@
+@charset "UTF-8";
+body {
+  background-color: black;
+  color: white;
+}
+
+header, .alert {
+  z-index: 100;
+}
+
+.tituloProducto {
+  text-align: center;
+  font-size: 40px;
+  color: rgb(206, 0, 0);
+  text-decoration: underline;
+}
+
+.centrar {
+  margin-top: 25px;
+  font-weight: bold;
+  font-size: 20px;
+}
+.centrar:hover {
+  background-color: black;
+}
+
+.buscador {
+  margin-top: 33px;
+  margin-left: 100px;
+  margin-right: 250px;
+  width: 200px;
+}
+
+.description {
+  height: 25px;
+  overflow: hidden;
+  transition: heigh 0.3s ease-in 0.3s;
+}
+.description:hover {
+  height: 80px;
+}
+
+.hide, .remove {
+  display: none;
+}
+
+.logoNav {
+  margin-left: -55px;
+  padding-right: 20px;
+}
+.logoNav:hover {
+  transform: scale(1.1);
+  transition: all 0.8s;
+  overflow: hidden;
+  filter: drop-shadow(7px 7px 10px rgb(214, 1, 1));
+}
+
+.logoNav, .logoFooter {
+  border-radius: 5px;
+}
+
+.carrito {
+  min-height: 70vh;
+  max-width: 1000px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.table__productos {
+  display: flex;
+}
+
+.table__productos > img {
+  width: 9rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+  border-radius: 6px;
+  margin-right: 20px;
+}
+
+.table__cantidad > input {
+  width: 40px;
+  border: none;
+  outline: 0;
+  font-size: 16px;
+  font-weight: 700;
+  margin-right: 30px;
+  margin-bottom: 20px;
+}
+
+footer {
+  border-top: 1px solid white;
+  height: 550px;
+}
+footer .divFooter {
+  text-align: center;
+  background-color: black;
+  color: white;
+}
+footer .divFooter .tituloNav {
+  font-size: 22px;
+  font-family: sans-serif;
+  letter-spacing: 3px;
+  font-weight: bold;
+}
+footer .divFooter .refNav {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 15px;
+}
+footer .divFooter .refNav:hover {
+  color: rgb(190, 10, 10);
+}
+footer .divFooter .bi-facebook, footer .divFooter .bi-instagram, footer .divFooter .bi-whatsapp {
+  font-size: 30px;
+  margin: 10px;
+}
+footer .divFooter .bi-facebook:hover {
+  color: rgb(73, 96, 230);
+}
+footer .divFooter .bi-instagram:hover {
+  color: rgb(201, 72, 72);
+}
+footer .divFooter .bi-whatsapp:hover {
+  color: green;
+}
+footer .divFooter .logoFooter:hover {
+  filter: drop-shadow(7px 7px 10px rgb(255, 255, 255));
+}
+footer .divFooter .logoFooter:hover {
+  transform: scale(1.1);
+  transition: all 0.8s;
+  overflow: hidden;
+}
+
+.parrafoCopyright {
+  margin-top: 90px;
+}
+
+.hrBarra {
+  height: 4px;
+  background-color: white;
+}
+
+/* MEDIA QUERI HTML INDEX */
+@media screen and (max-width: 776px) {
+  .seleccion {
+    height: auto;
+  }
+  .hrBarra {
+    margin-right: 30px;
+  }
+}
+/* MEDIA QUERI HTML NOSOTROS */
+@media screen and (max-width: 776px) {
+  .descripcionNosotrosTitulo {
+    font-size: 17px;
+    width: 300px;
+    margin-left: 70px;
+  }
+  .nos {
+    margin-top: 20px;
+  }
+}
+/* MEDIA QUERI CONTACTO */
+@media screen and (max-width: 776px) {
+  .contenedorContacto2 {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-areas: "datosContacto";
+  }
+  .datosContacto {
+    grid-area: datosContacto;
+  }
+  .bannerContacto {
+    background-image: url(../Imagenes/bannercontacto.jpg);
+    background-position: -270px;
+  }
+  .textoBannerContacto {
+    margin-top: -20px;
+  }
+  .submit, .reset {
+    padding-left: 10px;
+  }
+  .reset {
+    margin-left: 15px;
+  }
+  .button1 {
+    display: none;
+  }
+}
+/* MEDIA QUERI HOMBRE */
+@media screen and (max-width: 550px) {
+  .cardTamaño {
+    width: 300px;
+    text-align: center;
+    margin-top: 40px;
+  }
+  .tarjeta {
+    display: contents;
+    flex-direction: row;
+  }
+  .columnaCatalogo {
+    justify-content: space-around;
+  }
+}
+@media screen and (max-width: 776px) {
+  .pCHLista2 {
+    display: none;
+  }
+  .cardTamaño {
+    width: 200px;
+    text-align: center;
+    margin-top: 40px;
+  }
+  .h3Productos, .folder {
+    text-align: center;
+  }
+  .listaCatalogo {
+    margin-left: -10px;
+  }
+  .hrBarra {
+    margin-left: 20px;
+  }
+  .tarjeta {
+    display: contents;
+    flex-direction: row;
+  }
+  .columnaCatalogo {
+    justify-content: space-around;
+  }
+}
+/* MEDIA QUERI MUJER */
+@media screen and (max-width: 776px) {
+  .ubicacionMujer {
+    margin-left: 7px;
+  }
+}
+/* MEDIA QUERI HTML SKATEBOARDING */
+@media screen and (max-width: 776px) {
+  .textoMantenimiento {
+    display: none;
+  }
+}
+@media only screen and (max-width: 776px) {
+  .logoNav {
+    filter: drop-shadow(7px 7px 10px rgb(150, 39, 39));
+  }
+  .altura {
+    height: 250px;
+  }
+  .seleccion {
+    background-blend-mode: soft-light;
+    background-color: rgb(51, 51, 51);
+  }
+}
+/* MAPA Y MAPGET (+ @each) REALIZADO EN LA SECCION HTML SKATEBOARDING - IMPLEMENTADO EN ICONOS DE LAS REDES EN EL FOOTER*/
+.textoMantenimiento h4 {
+  background-color: rgba(49, 49, 49, 0.747);
+  font-size: 40px;
+  border-radius: 10px;
+  color: rgb(231, 134, 6);
+}
+
+.bi-facebook {
+  color: blue;
+}
+
+.bi-instagram {
+  color: red;
+}
+
+.bi-whatsapp {
+  color: green;
+}/*# sourceMappingURL=estilos.css.map */

@@ -1,0 +1,26 @@
+$vista: mobile;
+
+@if ($vista == mobile) {
+    @media only screen and (max-width: 776px) {
+        .logoNav {
+            filter: $filtro;
+        }
+
+        .altura {
+            height: $heightCarousel;
+         }
+
+         .seleccion {
+            background-blend-mode: soft-light;
+            background-color: rgb(51, 51, 51);
+         }
+    }
+} @else {
+    .logoNav {
+        filter: none;
+    }
+
+    #cuotas {
+        background-color: darkblue;
+    }
+}

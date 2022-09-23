@@ -1,0 +1,159 @@
+body {
+    background-color: $bgColor;
+    color: white;
+}
+
+header, .alert {
+    z-index: 100;
+}
+
+.tituloProducto {
+    text-align: center;
+    font-size: 40px;
+    color: rgb(206, 0, 0);
+    text-decoration: underline;
+}
+
+.centrar {
+    margin-top: 25px;
+    font-weight: bold;
+    font-size: 20px;
+    &:hover {
+        background-color: black;
+    }
+}
+
+
+    
+.buscador {
+    margin-top: 33px;
+    margin-left: 100px;
+    margin-right: 250px;
+    width: 200px;
+}
+
+.description {
+    height: 25px;
+    overflow: hidden;
+    transition: heigh .3s ease-in .3s;   
+
+    &:hover {
+        height: 80px;
+    }
+}
+
+.hide, .remove {
+    display: none;
+}
+
+.logoNav {
+        margin-left: -55px;
+        padding-right: 20px;
+
+        &:hover {
+            transform: scale(1.1);
+            transition: all 0.8s;
+            overflow: hidden;
+            filter: drop-shadow(7px 7px 10px rgb(214, 1, 1));
+
+        }
+}
+
+.logoNav, .logoFooter {
+    border-radius: 5px;
+}   
+
+
+.carrito {
+    min-height: 70vh;
+    max-width: 1000px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.table__productos {
+    display: flex;
+}
+
+.table__productos > img {
+    width: 9rem;
+    object-fit: contain;
+    border-radius: 6px;
+    margin-right: 20px;
+}
+
+.table__cantidad > input {
+    width: 40px;
+    border: none;
+    outline: 0;
+    font-size: 16px;
+    font-weight: 700;
+    margin-right: 30px;
+    margin-bottom: 20px;
+}
+
+
+footer {
+    border-top: 1px solid $colorText;
+    height: 550px;
+
+    .divFooter {
+        text-align: center;
+        background-color: $bgColor;
+        color: $colorText;
+    
+        .tituloNav {
+            font-size: 22px;
+            font-family: sans-serif;
+            letter-spacing: 3px;
+            font-weight: $fWeight;
+        }
+        
+        .refNav {
+            color: $colorText;
+            text-decoration: none;
+            font-weight: $fWeight;
+            font-size: 15px;
+    
+            &:hover {
+                color: rgb(190, 10, 10);
+            }
+        }
+        
+        .bi-facebook, .bi-instagram, .bi-whatsapp {
+            font-size: 30px;
+            margin: 10px;
+        }
+        
+        .bi-facebook:hover {
+            color: rgb(73, 96, 230);
+        }
+        
+        .bi-instagram:hover {
+            color: rgb(201, 72, 72);
+        }
+        
+        .bi-whatsapp:hover {
+            color: $bgColorBtn;
+        }
+
+        .logoFooter:hover {
+            filter: drop-shadow(7px 7px 10px rgb(255, 255, 255));
+        }
+        
+        .logoFooter:hover {
+            transform: scale(1.1);
+            transition: all 0.8s;
+            overflow: hidden;
+        }       
+    }
+}
+
+.parrafoCopyright {
+margin-top: 90px;
+}
+
+.hrBarra {
+height: 4px;
+background-color: $colorText;
+}
