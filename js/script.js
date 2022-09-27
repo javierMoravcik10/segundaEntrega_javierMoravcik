@@ -1,6 +1,21 @@
+//    OPERADOR TERNARIO - PARA DESAFIO COMPLEMENTARIO (OPTIMIZANDO EL PROYECTO FINAL)
+
+
+const usuario = prompt("Ingrese su edad para verificar autorizacion de compra");
+
+usuario >= 18 ? alert("Usted se encuentra autorizado para realizar compras") : alert("Usted no esta autorizado para comprar en este sitio");
+
+
+
+
 const clickButton = document.querySelectorAll(".button");
 const tBody = document.querySelector(".tBody");
 let carrito = []
+
+//    OPERADOR (AND) - PARA DESAFIO COMPLEMENTARIO (OPTIMIZANDO EL PROYECTO FINAL)
+
+
+carrito.length === 0 && alert("Su carrito de compras se encuentra vacio en este momento");
 
 
 clickButton.forEach(btn => {
@@ -47,6 +62,9 @@ function addItemCarrito(newItem) {
     
     for(let i =0; i < carrito.length ; i++){
         if (carrito[i].title.trim() === newItem.title.trim()){
+
+            // OPERADOR ++, OPERADOR AVANZADO PARA INCREMENTAR PRODUCTOS AL CARRITO.
+
             carrito[i].cantidad ++;
             const inputValue = inputElemento[i]
             inputValue.value++
@@ -114,8 +132,7 @@ function removeItemCarrito(e){
     
     for(let i=0; i<carrito.length ; i++){
         if(carrito[i].title.trim() === title.trim()){
-            carrito.splice(i, 1)
-            console.log("hola mundo");
+            carrito.splice(i, 1);
         }
     }
 
@@ -144,6 +161,9 @@ function sumaCantidad(e) {
     const title = tr.querySelector(".title").textContent;
     carrito.forEach(item => {
         if(item.title.trim() === title){
+
+                    //    OPERADOR TERNARIO - PARA DESAFIO COMPLEMENTARIO (OPTIMIZANDO EL PROYECTO FINAL)
+
             sumaInput.value < 1 ? (sumaInput.value = 1) : sumaInput.value;
             item.cantidad = sumaInput.value;
             carritoTotal()
@@ -160,8 +180,9 @@ function addLocalStorage(){
 window.onload = function() {
 
     const storage = JSON.parse(localStorage.getItem("carrito"));
+
     if(storage){
-        carrito = storage;
+        carrito = storage; 
         renderCarrito()
     }
 }
